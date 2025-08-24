@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.small-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.small-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.small-box h5 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.trip-count {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+/*sidebar*/
+
+
+/*sidebar*/
+
+
+/*sidebar*/
+
+.sidebar {
+    top: 60px;
+    left: 0px;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar a:hover {
+    background: #495057;
+}
+
+.sidebar .menu-text {
+    font-size: 16px;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: #343a40;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+.main-content {
+    margin-left: 230px;
+    padding: 5px 10px;
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+    .sidebar-toggle {
+        display: block;
+    }
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #778899;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}

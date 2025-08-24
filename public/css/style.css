@@ -1,0 +1,116 @@
+.main-sidebar,
+.sidebar,
+.sidebar-mini.sidebar-open .wrapper {
+    display: none !important;
+}
+
+.main-header .nav-item,
+.main-header .navbar-nav {
+    display: none !important;
+}
+
+.content-wrapper,
+.main-header {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+body.sidebar-mini {
+    overflow-x: hidden;
+}
+
+body,
+html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.card {
+    max-width: 320px;
+    width: 120%;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.input-group div {
+    position: relative;
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    color: #007bff;
+}
+
+#togglePassword:hover {
+    color: #0056b3;
+}
+
+.btn {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 8px;
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+        padding: 15px;
+    }
+}

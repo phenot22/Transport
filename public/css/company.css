@@ -1,0 +1,71 @@
+body {
+    background: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.card-header h4 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: separate;
+}
+
+table th,
+table td {
+    padding: 8px 10px;
+    border: 1px solid #dee2e6;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+table th {
+    background-color: #343a40;
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table td {
+    font-size: 0.9rem;
+}
+
+.table-row-hover {
+    transition: background-color 0.25s ease;
+}
+
+.table-row-hover:hover {
+    background-color: #e9ecef;
+}
+
+thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+@media (max-width: 992px) {
+    table th,
+    table td {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+    .card-header h4 {
+        font-size: 1.25rem;
+    }
+}
